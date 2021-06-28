@@ -12,158 +12,173 @@ export class ReceptionsController {
   @Get(':id')
   findAll() {
     return [
-    {
-      publicKey:'5e935f97-5034-4697-805a-d7e14f54b85d',
-      origen:{
-        publicKey:'5e935f97-5034-4698-805a-d7e14f54b85d',
-        type:'ducto',
-        key:'DUC-DES-004'
-      },
-      numeroDeRegistro:'1993',
-      volumenPuntoEntrada: {
-        valorNumerico:'20000',
-        um:'UM03'
-      },
-      volumenInicialTanque:null,
-      volumenFinalTanque:null,
-      uMCVolumenFinalTanque:null,
-      volumenRecepcion:{
-        valorNumerico:'130000',
-        um:'UM03'
-      },
-      temperatura:'20',
-      presionAbsoluta:'101.325',
-      fechaYHoraInicioRecepcion:'2020-10-31T10:59:45-01:00',
-      fechaYHoraFinalRecepcion:'2020-10-31T11:59:45-01:00',
-    },
-    {
-      publicKey:'5e935f97-5034-4697-805a-d7e14f54b85f',
-      origen:{
-        publicKey:'5e935f97-5034-4698-805a-d7e14f54b85g',
-        type:'tanque',
-        key:'TQS-TDA-0001'
-      },
-      numeroDeRegistro:'1994',
-      volumenPuntoEntrada: null,
-      volumenInicialTanque:{
-        valorNumerico:'20000',
-        um:'UM03'
-      },
-      volumenFinalTanque:{
-        valorNumerico:'150000'
-      },
-      uMCVolumenFinalTanque:'UM03',
-      volumenRecepcion:{
-        valorNumerico:'130000',
-        um:'UM03'
-      },
-      temperatura:'20',
-      presionAbsoluta:'101.325',
-      fechaYHoraInicioRecepcion:'2020-10-31T10:59:45-01:00',
-      fechaYHoraFinalRecepcion:'2020-10-31T11:59:45-01:00',
-    },
-    {
-      publicKey:'5e935f97-5034-4697-805a-d7e14f54b85x',
-      origen:{
-        publicKey:'5e935f97-5034-4698-805a-d7e14f54b85d',
-        type:'pozo',
-        key:'POZ-NOBLES0001DEL'
-      },
-      numeroDeRegistro:'199',
-      volumenPuntoEntrada: null,
-      volumenInicialTanque:null,
-      volumenFinalTanque:null,
-      uMCVolumenFinalTanque:null,
-      volumenRecepcion:{
-        valorNumerico:'130000',
-        um:'UM03'
-      },
-      temperatura:'20',
-      presionAbsoluta:'101.325',
-      fechaYHoraInicioRecepcion:'2020-10-31T10:59:45-01:00',
-      fechaYHoraFinalRecepcion:'2020-10-31T11:59:45-01:00',
-    }
-
-    ]
-  }
-
-  @Get(':id/:id2')
-  findAlls(@Param('id2') id: string) {
-
-    if (id === '5e935f97-5034-4697-805a-d7e14f54b85d') {
-      return {
-        publicKey:'5e935f97-5034-4697-805a-d7e14f54b85d',
+      {
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R1',
         origen:{
-          publicKey:'5e935f97-5034-4698-805a-d7e14f54b85d',
-          type:'ducto',
-          key:'DUC-DES-004'
-        },
-        numeroDeRegistro:'1993',
-        volumenPuntoEntrada: {
-          valorNumerico:'20000',
-          um:'UM03'
-        },
-        volumenInicialTanque:null,
-        volumenFinalTanque:null,
-        uMCVolumenFinalTanque:null,
-        volumenRecepcion:{
-          valorNumerico:'130000',
-          um:'UM03'
-        },
-        temperatura:'20',
-        presionAbsoluta:'101.325',
-        fechaYHoraInicioRecepcion:'2020-10-31T10:59:45-01:00',
-        fechaYHoraFinalRecepcion:'2020-10-31T11:59:45-01:00',
-      }          
-    }else if (id === '5e935f97-5034-4697-805a-d7e14f54b85f') {
-      return {
-        publicKey:'5e935f97-5034-4697-805a-d7e14f54b85f',
-        origen:{
-          publicKey:'5e935f97-5034-4698-805a-d7e14f54b85g',
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
           type:'tanque',
           key:'TQS-TDA-0001'
         },
         numeroDeRegistro:'1994',
         volumenPuntoEntrada: null,
         volumenInicialTanque:{
-          valorNumerico:'20000',
+          valorNumerico:'100000',
           um:'UM03'
         },
         volumenFinalTanque:{
-          valorNumerico:'150000'
+          valorNumerico:'200000'
         },
         uMCVolumenFinalTanque:'UM03',
         volumenRecepcion:{
-          valorNumerico:'130000',
+          valorNumerico:'100000',
           um:'UM03'
         },
         temperatura:'20',
         presionAbsoluta:'101.325',
-        fechaYHoraInicioRecepcion:'2020-10-31T10:59:45-01:00',
-        fechaYHoraFinalRecepcion:'2020-10-31T11:59:45-01:00',
-      }
-    }else if (id === '5e935f97-5034-4697-805a-d7e14f54b85x'){
-      return {
-        publicKey:'5e935f97-5034-4697-805a-d7e14f54b85x',
+        fechaYHoraInicioRecepcion:'2021-06-28T08:00:45-06:00',
+        fechaYHoraFinalRecepcion:'2021-06-28T10:00:00-01:00',
+      },
+      {
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R2',
         origen:{
-          publicKey:'5e935f97-5034-4698-805a-d7e14f54b85d',
-          type:'pozo',
-          key:'POZ-NOBLES0001DEL'
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+          type:'tanque',
+          key:'TQS-TDA-0001'
         },
-        numeroDeRegistro:'199',
+        numeroDeRegistro:'1997',
         volumenPuntoEntrada: null,
-        volumenInicialTanque:null,
-        volumenFinalTanque:null,
-        uMCVolumenFinalTanque:null,
+        volumenInicialTanque:{
+          valorNumerico:'200000',
+          um:'UM03'
+        },
+        volumenFinalTanque:{
+          valorNumerico:'300000'
+        },
+        uMCVolumenFinalTanque:'UM03',
         volumenRecepcion:{
-          valorNumerico:'130000',
+          valorNumerico:'100000',
           um:'UM03'
         },
         temperatura:'20',
         presionAbsoluta:'101.325',
-        fechaYHoraInicioRecepcion:'2020-10-31T10:59:45-01:00',
-        fechaYHoraFinalRecepcion:'2020-10-31T11:59:45-01:00',
+        fechaYHoraInicioRecepcion:'2021-06-28T10:05:00-06:00',
+        fechaYHoraFinalRecepcion:'2021-06-28T11:15:00-06:00',
+      },
+      {
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R3',
+        origen:{
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+          type:'tanque',
+          key:'TQS-TDA-0001'
+        },
+        numeroDeRegistro:'1994',
+        volumenPuntoEntrada: null,
+        volumenInicialTanque:{
+          valorNumerico:'0',
+          um:'UM03'
+        },
+        volumenFinalTanque:{
+          valorNumerico:'100000'
+        },
+        uMCVolumenFinalTanque:'UM03',
+        volumenRecepcion:{
+          valorNumerico:'100000',
+          um:'UM03'
+        },
+        temperatura:'20',
+        presionAbsoluta:'101.325',
+        fechaYHoraInicioRecepcion:'2021-06-28T14:00:45-06:00',
+        fechaYHoraFinalRecepcion:'2021-06-28T15:00:00-01:00',
+      },
+    ]
+  }
+
+  @Get(':id/:id2')
+  findAlls(@Param('id2') id: string) {
+
+    if (id === '5e935f97-5034-4697-805a-d7e14f54b8R1') {
+      return  {
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R1',
+        origen:{
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+          type:'tanque',
+          key:'TQS-TDA-0001'
+        },
+        numeroDeRegistro:'1994',
+        volumenPuntoEntrada: null,
+        volumenInicialTanque:{
+          valorNumerico:'100000',
+          um:'UM03'
+        },
+        volumenFinalTanque:{
+          valorNumerico:'200000'
+        },
+        uMCVolumenFinalTanque:'UM03',
+        volumenRecepcion:{
+          valorNumerico:'100000',
+          um:'UM03'
+        },
+        temperatura:'20',
+        presionAbsoluta:'101.325',
+        fechaYHoraInicioRecepcion:'2021-06-28T08:00:45-06:00',
+        fechaYHoraFinalRecepcion:'2021-06-28T10:00:00-01:00',
       }
+    }else if (id === '5e935f97-5034-4697-805a-d7e14f54b8R2'){
+      return           {
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R2',
+        origen:{
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+          type:'tanque',
+          key:'TQS-TDA-0001'
+        },
+        numeroDeRegistro:'1997',
+        volumenPuntoEntrada: null,
+        volumenInicialTanque:{
+          valorNumerico:'200000',
+          um:'UM03'
+        },
+        volumenFinalTanque:{
+          valorNumerico:'300000'
+        },
+        uMCVolumenFinalTanque:'UM03',
+        volumenRecepcion:{
+          valorNumerico:'100000',
+          um:'UM03'
+        },
+        temperatura:'20',
+        presionAbsoluta:'101.325',
+        fechaYHoraInicioRecepcion:'2021-06-28T10:05:00-06:00',
+        fechaYHoraFinalRecepcion:'2021-06-28T11:15:00-06:00',
+      }
+    }else if (id === '5e935f97-5034-4697-805a-d7e14f54b8R3') {
+
+      return {
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R3',
+        origen:{
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+          type:'tanque',
+          key:'TQS-TDA-0002'
+        },
+        numeroDeRegistro:'1996',
+        volumenPuntoEntrada: null,
+        volumenInicialTanque:{
+          valorNumerico:'0',
+          um:'UM03'
+        },
+        volumenFinalTanque:{
+          valorNumerico:'100000'
+        },
+        uMCVolumenFinalTanque:'UM03',
+        volumenRecepcion:{
+          valorNumerico:'100000',
+          um:'UM03'
+        },
+        temperatura:'20',
+        presionAbsoluta:'101.325',
+        fechaYHoraInicioRecepcion:'2021-06-28T14:00:45-06:00',
+        fechaYHoraFinalRecepcion:'2021-06-28T15:00:00-01:00',
+      }
+
     }else{
       throw new HttpException('invalid key',HttpStatus.BAD_REQUEST)
     }

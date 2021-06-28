@@ -29,26 +29,19 @@ export class GraficOperationController {
     return [
 
       {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
         key:'TQS-TDA-0001',
-        entregas:'60000',
-        recepciones:'30000'
+        totalEntregas:'50000',
+        totalRecepciones:'200000'
       },
       {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
         key:'TQS-TDA-0002',
-        entregas:'120000',
-        recepciones:'100000'
-      },
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'TQS-TDA-0003',
-        entregas:'20000',
-        recepciones:'9500'
-      },
+        totalEntregas:'125000',
+        totalRecepciones:'100000'
+      }
 
     ]
-
 
   }
 
@@ -63,20 +56,20 @@ export class GraficOperationController {
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'POZ-NOBLES0001DEL',
-        entregas:'30000',
-        recepciones:'30000'
+        totalEntregas:'30000',
+        totalRecepciones:'30000'
       },
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'POZ-NOBLES0001DEL',
-        entregas:'5000',
-        recepciones:'0'
+        totalEntregas:'5000',
+        totalRecepciones:'0'
       },
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'POZ-NOBLES0001DEL',
-        entregas:'0',
-        recepciones:'2500'
+        totalEntregas:'0',
+        totalRecepciones:'2500'
       },
 
     ]
@@ -95,20 +88,20 @@ export class GraficOperationController {
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'POZ-DUC-DES-004',
-        entregas:'4000',
-        recepciones:'30000'
+        totalEntregas:'4000',
+        totalRecepciones:'30000'
       },
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'POZ-DUC-DES-005',
-        entregas:'5000',
-        recepciones:'100'
+        totalEntregas:'5000',
+        totalRecepciones:'100'
       },
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'POZ-DUC-DES-006',
-        entregas:'10000',
-        recepciones:'2500'
+        totalEntregas:'10000',
+        totalRecepciones:'2500'
       },
 
     ]
@@ -117,7 +110,7 @@ export class GraficOperationController {
   }
 
   @Get(':id/manguera/')
-  findMangueras(@Param('id') id: string) {
+  findMangueras(@Param('id') id: string) { 
 
     const date = id;
     console.log('fecha a filtrar',date);
@@ -127,22 +120,22 @@ export class GraficOperationController {
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'DISP-0004-MGA-0001',
-        entregas:'4000',
+        totalEntregas:'4000',
       },
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'DISP-0004-MGA-0002',
-        entregas:'5000',
+        totalEntregas:'5000',
       },
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'DISP-0004-MGA-0003',
-        entregas:'10000',
+        totalEntregas:'10000',
       },
       {
         publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
         key:'DISP-0004-MGA-0004',
-        entregas:'10000',
+        totalEntregas:'10000',
       },
 
     ]
@@ -150,20 +143,243 @@ export class GraficOperationController {
 
   }
 
-  @Get(':id/tanque/:id2/entregas')
-  findentregas(@Param('id2') id: string) {
+  @Get(':id/tanque/:id2')
+  findenOperations(@Param('id2') id2: string) {
 
-    const date = id;
-    console.log('fecha a filtrar',date);
+    const key = id2;
+    console.log('tankey',key);
 
-    return       {
-      publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-      key:'TQS-TDA-0001',
-      totalEntregas:'60000',
-      totalRecepciones:'30000',
-      entregas:[],
-      recepciones:[]
+    if (key === '6e935f97-5034-4697-805a-d7e14f54b85a') {
+      return {
+        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+        key:'TQS-TDA-0001',
+        totalEntregas:'50000',
+        totalRecepciones:'200000',
+        entregas:[
+          {
+            origen:{
+              publicKey:'5e935f97-5034-4697-805a-d7e14f54b85d',
+              key:'TQS-TDA-0001',
+              type:'tanque'
+            },
+            publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E1',
+            numeroDeRegistro:'56523',
+            volumenInicialTanque:{
+              valorNumerico:'300000',
+              um:'UM03',
+            },
+            volumenFinalTanque:{
+              valorNumerico:'250000'
+            },    
+            volumenEntregado:{
+              valorNumerico:'50000',
+              um:'UM03'
+            },
+            volumenPuntoSalida:null,
+            temperatura:'20',
+            presionAbsoluta:'101.325',
+            fechaYHoraInicialEntrega:'2021-06-28T12:05:15-06:00',
+            fechaYHoraFinalEntrega:'2021-06-28T13:01:45-06:00',
+            complemento:null,
+            tipoDeRegistro:null,
+            volumenEntregadoTotalizadorAcum:null,
+            volumenEntregadoTotalizadorInsta:null,
+            precioVentaTotalizadorInsta:null,
+            fechaYHoraEntrega:null,
+          },
+        ],
+        recepciones:[
+          {
+            publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R1',
+            origen:{
+              publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+              type:'tanque',
+              key:'TQS-TDA-0001'
+            },
+            numeroDeRegistro:'1994',
+            volumenPuntoEntrada: null,
+            volumenInicialTanque:{
+              valorNumerico:'100000',
+              um:'UM03'
+            },
+            volumenFinalTanque:{
+              valorNumerico:'200000'
+            },
+            uMCVolumenFinalTanque:'UM03',
+            volumenRecepcion:{
+              valorNumerico:'100000',
+              um:'UM03'
+            },
+            temperatura:'20',
+            presionAbsoluta:'101.325',
+            fechaYHoraInicioRecepcion:'2021-06-28T08:00:45-06:00',
+            fechaYHoraFinalRecepcion:'2021-06-28T10:00:00-01:00',
+          },
+          {
+            publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R2',
+            origen:{
+              publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+              type:'tanque',
+              key:'TQS-TDA-0001'
+            },
+            numeroDeRegistro:'1997',
+            volumenPuntoEntrada: null,
+            volumenInicialTanque:{
+              valorNumerico:'200000',
+              um:'UM03'
+            },
+            volumenFinalTanque:{
+              valorNumerico:'300000'
+            },
+            uMCVolumenFinalTanque:'UM03',
+            volumenRecepcion:{
+              valorNumerico:'100000',
+              um:'UM03'
+            },
+            temperatura:'20',
+            presionAbsoluta:'101.325',
+            fechaYHoraInicioRecepcion:'2021-06-28T10:05:00-06:00',
+            fechaYHoraFinalRecepcion:'2021-06-28T11:15:00-06:00',
+          }
+        ]
+      }
+    }else if (key === '6e935f97-5034-4697-805a-d7e14f54b85b') {
+      return {
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+          key:'TQS-TDA-0002',
+          totalEntregas:'120000',
+          totalRecepciones:'100000',
+          entregas:[
+            {
+              origen:{
+                publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+                key:'TQS-TDA-0002',
+                type:'tanque'
+              },
+              publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E2',
+              numeroDeRegistro:'56524',
+              volumenInicialTanque:{
+                valorNumerico:'100000',
+                um:'UM03',
+              },
+              volumenFinalTanque:{
+                valorNumerico:'25000'
+              },    
+              volumenEntregado:{
+                valorNumerico:'75000',
+                um:'UM03'
+              },
+              volumenPuntoSalida:null,
+              temperatura:'20',
+              presionAbsoluta:'101.325',
+              fechaYHoraInicialEntrega:'2021-06-28T09:05:15-06:00',
+              fechaYHoraFinalEntrega:'2021-06-28T10:01:45-06:00',
+              complemento:null,
+              tipoDeRegistro:null,
+              volumenEntregadoTotalizadorAcum:null,
+              volumenEntregadoTotalizadorInsta:null,
+              precioVentaTotalizadorInsta:null,
+              fechaYHoraEntrega:null,
+            },
+            {
+              origen:{
+                publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+                key:'TQS-TDA-0002',
+                type:'tanque'
+              },
+              publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E3',
+              numeroDeRegistro:'56524',
+              volumenInicialTanque:{
+                valorNumerico:'25000',
+                um:'UM03',
+              },
+              volumenFinalTanque:{
+                valorNumerico:'0'
+              },    
+              volumenEntregado:{
+                valorNumerico:'25000',
+                um:'UM03'
+              },
+              volumenPuntoSalida:null,
+              temperatura:'20',
+              presionAbsoluta:'101.325',
+              fechaYHoraInicialEntrega:'2021-06-28T12:05:15-06:00',
+              fechaYHoraFinalEntrega:'2021-06-28T13:01:45-06:00',
+              complemento:null,
+              tipoDeRegistro:null,
+              volumenEntregadoTotalizadorAcum:null,
+              volumenEntregadoTotalizadorInsta:null,
+              precioVentaTotalizadorInsta:null,
+              fechaYHoraEntrega:null,
+            },
+            {
+              origen:{
+                publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+                key:'TQS-TDA-0002',
+                type:'tanque'
+              },
+              publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E4',
+              numeroDeRegistro:'56524',
+              volumenInicialTanque:{
+                valorNumerico:'25000',
+                um:'UM03',
+              },
+              volumenFinalTanque:{
+                valorNumerico:'0'
+              },    
+              volumenEntregado:{
+                valorNumerico:'25000',
+                um:'UM03'
+              },
+              volumenPuntoSalida:null,
+              temperatura:'20',
+              presionAbsoluta:'101.325',
+              fechaYHoraInicialEntrega:'2021-06-28T15:05:15-06:00',
+              fechaYHoraFinalEntrega:'2021-06-28T16:01:45-06:00',
+              complemento:null,
+              tipoDeRegistro:null,
+              volumenEntregadoTotalizadorAcum:null,
+              volumenEntregadoTotalizadorInsta:null,
+              precioVentaTotalizadorInsta:null,
+              fechaYHoraEntrega:null,
+            }
+          ],
+          recepciones:[
+            {
+              publicKey:'5e935f97-5034-4697-805a-d7e14f54b8R3',
+              origen:{
+                publicKey:'6e935f97-5034-4697-805a-d7e14f54b85a',
+                type:'tanque',
+                key:'TQS-TDA-0002'
+              },
+              numeroDeRegistro:'1996',
+              volumenPuntoEntrada: null,
+              volumenInicialTanque:{
+                valorNumerico:'0',
+                um:'UM03'
+              },
+              volumenFinalTanque:{
+                valorNumerico:'100000'
+              },
+              uMCVolumenFinalTanque:'UM03',
+              volumenRecepcion:{
+                valorNumerico:'100000',
+                um:'UM03'
+              },
+              temperatura:'20',
+              presionAbsoluta:'101.325',
+              fechaYHoraInicioRecepcion:'2021-06-28T14:00:45-06:00',
+              fechaYHoraFinalRecepcion:'2021-06-28T15:00:00-01:00',
+            },
+          ]
+        }
+      
     }
+
+
+
+
+    
 
 
   }

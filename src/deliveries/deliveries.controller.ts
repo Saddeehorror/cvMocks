@@ -54,14 +54,14 @@ export class DeliveriesController {
               key:'TQS-TDA-0001',
               type:'tanque'
             },
-            publicKey:'5e935f97-5034-4697-805a-d7e14f54b85e',
+            publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E1',
             numeroDeRegistro:'56523',
             volumenInicialTanque:{
-              valorNumerico:'150000',
+              valorNumerico:'300000',
               um:'UM03',
             },
             volumenFinalTanque:{
-              valorNumerico:'100000'
+              valorNumerico:'250000'
             },    
             volumenEntregado:{
               valorNumerico:'50000',
@@ -70,8 +70,8 @@ export class DeliveriesController {
             volumenPuntoSalida:null,
             temperatura:'20',
             presionAbsoluta:'101.325',
-            fechaYHoraInicialEntrega:'2020-10-31T07:59:45-01:00',
-            fechaYHoraFinalEntrega:'2020-10-31T08:10:45-01:00',
+            fechaYHoraInicialEntrega:'2021-06-28T12:05:15-06:00',
+            fechaYHoraFinalEntrega:'2021-06-28T13:01:45-06:00',
             complemento:null,
             tipoDeRegistro:null,
             volumenEntregadoTotalizadorAcum:null,
@@ -79,6 +79,99 @@ export class DeliveriesController {
             precioVentaTotalizadorInsta:null,
             fechaYHoraEntrega:null,
           },
+          {
+            origen:{
+              publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+              key:'TQS-TDA-0002',
+              type:'tanque'
+            },
+            publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E2',
+            numeroDeRegistro:'56524',
+            volumenInicialTanque:{
+              valorNumerico:'100000',
+              um:'UM03',
+            },
+            volumenFinalTanque:{
+              valorNumerico:'25000'
+            },    
+            volumenEntregado:{
+              valorNumerico:'75000',
+              um:'UM03'
+            },
+            volumenPuntoSalida:null,
+            temperatura:'20',
+            presionAbsoluta:'101.325',
+            fechaYHoraInicialEntrega:'2021-06-28T09:05:15-06:00',
+            fechaYHoraFinalEntrega:'2021-06-28T10:01:45-06:00',
+            complemento:null,
+            tipoDeRegistro:null,
+            volumenEntregadoTotalizadorAcum:null,
+            volumenEntregadoTotalizadorInsta:null,
+            precioVentaTotalizadorInsta:null,
+            fechaYHoraEntrega:null,
+          },
+          {
+            origen:{
+              publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+              key:'TQS-TDA-0002',
+              type:'tanque'
+            },
+            publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E3',
+            numeroDeRegistro:'56524',
+            volumenInicialTanque:{
+              valorNumerico:'25000',
+              um:'UM03',
+            },
+            volumenFinalTanque:{
+              valorNumerico:'0'
+            },    
+            volumenEntregado:{
+              valorNumerico:'25000',
+              um:'UM03'
+            },
+            volumenPuntoSalida:null,
+            temperatura:'20',
+            presionAbsoluta:'101.325',
+            fechaYHoraInicialEntrega:'2021-06-28T12:05:15-06:00',
+            fechaYHoraFinalEntrega:'2021-06-28T13:01:45-06:00',
+            complemento:null,
+            tipoDeRegistro:null,
+            volumenEntregadoTotalizadorAcum:null,
+            volumenEntregadoTotalizadorInsta:null,
+            precioVentaTotalizadorInsta:null,
+            fechaYHoraEntrega:null,
+          },
+          {
+            origen:{
+              publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+              key:'TQS-TDA-0002',
+              type:'tanque'
+            },
+            publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E4',
+            numeroDeRegistro:'56524',
+            volumenInicialTanque:{
+              valorNumerico:'25000',
+              um:'UM03',
+            },
+            volumenFinalTanque:{
+              valorNumerico:'0'
+            },    
+            volumenEntregado:{
+              valorNumerico:'25000',
+              um:'UM03'
+            },
+            volumenPuntoSalida:null,
+            temperatura:'20',
+            presionAbsoluta:'101.325',
+            fechaYHoraInicialEntrega:'2021-06-28T15:05:15-06:00',
+            fechaYHoraFinalEntrega:'2021-06-28T16:01:45-06:00',
+            complemento:null,
+            tipoDeRegistro:null,
+            volumenEntregadoTotalizadorAcum:null,
+            volumenEntregadoTotalizadorInsta:null,
+            precioVentaTotalizadorInsta:null,
+            fechaYHoraEntrega:null,
+          }
         ]
 
         
@@ -398,6 +491,134 @@ export class DeliveriesController {
         },
         precioVentaTotalizadorInsta:'570',
         fechaYHoraEntrega:'2020-12-25T20:34:10-01:00',
+      }
+    }else if (id === '5e935f97-5034-4697-805a-d7e14f54b8E1') {
+      return           {
+        origen:{
+          publicKey:'5e935f97-5034-4697-805a-d7e14f54b85d',
+          key:'TQS-TDA-0001',
+          type:'tanque'
+        },
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E1',
+        numeroDeRegistro:'56523',
+        volumenInicialTanque:{
+          valorNumerico:'300000',
+          um:'UM03',
+        },
+        volumenFinalTanque:{
+          valorNumerico:'250000'
+        },    
+        volumenEntregado:{
+          valorNumerico:'50000',
+          um:'UM03'
+        },
+        volumenPuntoSalida:null,
+        temperatura:'20',
+        presionAbsoluta:'101.325',
+        fechaYHoraInicialEntrega:'2021-06-28T12:05:15-06:00',
+        fechaYHoraFinalEntrega:'2021-06-28T13:01:45-06:00',
+        complemento:null,
+        tipoDeRegistro:null,
+        volumenEntregadoTotalizadorAcum:null,
+        volumenEntregadoTotalizadorInsta:null,
+        precioVentaTotalizadorInsta:null,
+        fechaYHoraEntrega:null,
+      }
+    }else if (id === '5e935f97-5034-4697-805a-d7e14f54b8E2'){
+      return             {
+        origen:{
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+          key:'TQS-TDA-0002',
+          type:'tanque'
+        },
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E2',
+        numeroDeRegistro:'56524',
+        volumenInicialTanque:{
+          valorNumerico:'100000',
+          um:'UM03',
+        },
+        volumenFinalTanque:{
+          valorNumerico:'25000'
+        },    
+        volumenEntregado:{
+          valorNumerico:'75000',
+          um:'UM03'
+        },
+        volumenPuntoSalida:null,
+        temperatura:'20',
+        presionAbsoluta:'101.325',
+        fechaYHoraInicialEntrega:'2021-06-28T09:05:15-06:00',
+        fechaYHoraFinalEntrega:'2021-06-28T10:01:45-06:00',
+        complemento:null,
+        tipoDeRegistro:null,
+        volumenEntregadoTotalizadorAcum:null,
+        volumenEntregadoTotalizadorInsta:null,
+        precioVentaTotalizadorInsta:null,
+        fechaYHoraEntrega:null,
+      }
+    }else if (id === '5e935f97-5034-4697-805a-d7e14f54b8E3'){
+      return             {
+        origen:{
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+          key:'TQS-TDA-0002',
+          type:'tanque'
+        },
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E3',
+        numeroDeRegistro:'56524',
+        volumenInicialTanque:{
+          valorNumerico:'25000',
+          um:'UM03',
+        },
+        volumenFinalTanque:{
+          valorNumerico:'0'
+        },    
+        volumenEntregado:{
+          valorNumerico:'25000',
+          um:'UM03'
+        },
+        volumenPuntoSalida:null,
+        temperatura:'20',
+        presionAbsoluta:'101.325',
+        fechaYHoraInicialEntrega:'2021-06-28T12:05:15-06:00',
+        fechaYHoraFinalEntrega:'2021-06-28T13:01:45-06:00',
+        complemento:null,
+        tipoDeRegistro:null,
+        volumenEntregadoTotalizadorAcum:null,
+        volumenEntregadoTotalizadorInsta:null,
+        precioVentaTotalizadorInsta:null,
+        fechaYHoraEntrega:null,
+      }
+    }else if (id === '5e935f97-5034-4697-805a-d7e14f54b8E4') {
+      return             {
+        origen:{
+          publicKey:'6e935f97-5034-4697-805a-d7e14f54b85b',
+          key:'TQS-TDA-0002',
+          type:'tanque'
+        },
+        publicKey:'5e935f97-5034-4697-805a-d7e14f54b8E4',
+        numeroDeRegistro:'56524',
+        volumenInicialTanque:{
+          valorNumerico:'25000',
+          um:'UM03',
+        },
+        volumenFinalTanque:{
+          valorNumerico:'0'
+        },    
+        volumenEntregado:{
+          valorNumerico:'25000',
+          um:'UM03'
+        },
+        volumenPuntoSalida:null,
+        temperatura:'20',
+        presionAbsoluta:'101.325',
+        fechaYHoraInicialEntrega:'2021-06-28T15:05:15-06:00',
+        fechaYHoraFinalEntrega:'2021-06-28T16:01:45-06:00',
+        complemento:null,
+        tipoDeRegistro:null,
+        volumenEntregadoTotalizadorAcum:null,
+        volumenEntregadoTotalizadorInsta:null,
+        precioVentaTotalizadorInsta:null,
+        fechaYHoraEntrega:null,
       }
     }else{
       throw new HttpException('invalid key',HttpStatus.BAD_REQUEST)
