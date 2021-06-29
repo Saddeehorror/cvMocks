@@ -53,24 +53,24 @@ export class GraficOperationController {
 
     return [
 
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'POZ-NOBLES0001DEL',
-        totalEntregas:'30000',
-        totalRecepciones:'30000'
-      },
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'POZ-NOBLES0001DEL',
-        totalEntregas:'5000',
-        totalRecepciones:'0'
-      },
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'POZ-NOBLES0001DEL',
-        totalEntregas:'0',
-        totalRecepciones:'2500'
-      },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'POZ-NOBLES0001DEL',
+      //   totalEntregas:'30000',
+      //   totalRecepciones:'30000'
+      // },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'POZ-NOBLES0001DEL',
+      //   totalEntregas:'5000',
+      //   totalRecepciones:'0'
+      // },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'POZ-NOBLES0001DEL',
+      //   totalEntregas:'0',
+      //   totalRecepciones:'2500'
+      // },
 
     ]
 
@@ -85,24 +85,24 @@ export class GraficOperationController {
 
     return [
 
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'POZ-DUC-DES-004',
-        totalEntregas:'4000',
-        totalRecepciones:'30000'
-      },
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'POZ-DUC-DES-005',
-        totalEntregas:'5000',
-        totalRecepciones:'100'
-      },
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'POZ-DUC-DES-006',
-        totalEntregas:'10000',
-        totalRecepciones:'2500'
-      },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'POZ-DUC-DES-004',
+      //   totalEntregas:'4000',
+      //   totalRecepciones:'30000'
+      // },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'POZ-DUC-DES-005',
+      //   totalEntregas:'5000',
+      //   totalRecepciones:'100'
+      // },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'POZ-DUC-DES-006',
+      //   totalEntregas:'10000',
+      //   totalRecepciones:'2500'
+      // },
 
     ]
 
@@ -117,26 +117,26 @@ export class GraficOperationController {
 
     return [
 
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'DISP-0004-MGA-0001',
-        totalEntregas:'4000',
-      },
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'DISP-0004-MGA-0002',
-        totalEntregas:'5000',
-      },
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'DISP-0004-MGA-0003',
-        totalEntregas:'10000',
-      },
-      {
-        publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
-        key:'DISP-0004-MGA-0004',
-        totalEntregas:'10000',
-      },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'DISP-0004-MGA-0001',
+      //   totalEntregas:'4000',
+      // },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'DISP-0004-MGA-0002',
+      //   totalEntregas:'5000',
+      // },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'DISP-0004-MGA-0003',
+      //   totalEntregas:'10000',
+      // },
+      // {
+      //   publicKey:'6e935f97-5034-4697-805a-d7e14f54b85d',
+      //   key:'DISP-0004-MGA-0004',
+      //   totalEntregas:'10000',
+      // },
 
     ]
 
